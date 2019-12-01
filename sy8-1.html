@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+body,h2,td{
+	    margin:0;padding:0;
+	}
+h2{
+	text-align:center;
+	text-size:24;
+	color:#FFF;
+	}
+form{
+	display:inline-block;
+	 width:580px;
+	 margin:0 atuo;
+	 padding:20px;
+	 background-color:#515151;
+	 color:#FFF;
+	}
+select{ 
+       width:170px;
+	   height:25px;
+}
+table{
+	border-spacing:10px 15px;
+	}
+.first{
+	width:20px;
+	height:14px;
+	}
+.second{
+	width:380px;
+	}
+#sub{
+	text-align:center;
+	margin-top:25px;
+	}
+#zheng{
+	display:table;
+	margin:10px auto;
+	}	
+</style>
+</head>
+
+<body>
+<div id="zheng">
+<form action="#" method="post" name="form">
+<h2>增加快递信息</h2>
+<fieldset>
+<legend>发货单</legend>
+<table>
+	<tr>
+		<td>发货人：</td>
+		<td>
+			<input type="text" name="shipper">
+		</td>
+		<td>地址：</td>
+		<td>
+			<input type="text" name="shipper">
+		</td>
+	</tr>
+	<tr>
+		<td>电话：</td>
+       <td>
+			<input type="text" name="shipper">
+		</td>
+        <td>邮编：</td>
+        <td>
+			<input type="text" name="shipper">
+		</td>	    
+	</tr>
+</table>	
+</fieldset>
+<fieldset>
+	<legend>收货单</legend>
+	<table>
+		<tr>
+			<td>收货人：</td>
+			<td>
+			<input type="text" name="shipper">
+		</td>
+			<td>地址：</td>
+			<td>
+			<input type="text" name="shipper">
+		</td>
+		</tr>
+		<tr>
+			<td>电话：</td>
+			<td>
+			<input type="text" name="shipper">
+		</td>
+			<td>邮编：</td>
+			<td>
+			<input type="text" name="shipper">
+		</td>
+		</tr>
+		<tr>
+			<td>地区：</td>
+			<td colspan="2">
+				<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>浙江</option>
+					<option>四川</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>包装：</td>
+			<td colspan="4">
+			<input type="checkbox" name="sex" value="纸箱">
+            <label for="beauty">纸箱</label>	
+			<input type="checkbox" name="sex" value="木箱">
+            <label for="beauty">木箱</label>	
+			<input type="checkbox" name="sex" value="快递袋">
+            	<label for="beauty">快递袋</label>	
+			<input type="checkbox" name="sex" value="其他">
+            	<label for="beauty">其他</label>	
+			</td>
+		</tr>
+		<tr>
+			<td>付款方式：</td>
+			<td colspan="4">
+				<input type="radio" name="pay" value="现金" id="way">
+                <label for="way">现金</label>
+				<input type="radio" name="pay" value="支付宝" id="way">
+                <label for="way">支付宝</label>
+				<input type="radio" name="pay" value="网银" id="way">
+                <label for="way">网银</label>
+				<input type="radio" name="pay" value="ATM" id="way">
+                <label for="way">ATM</label>
+			</td>
+		</tr>
+	</table>
+</fieldset>
+	<fieldset>
+		<legend>货物信息</legend>
+		<table>
+			<tr>
+				<td>货物名称：</td>
+				<td colspan="5"><input type="text" name="shipper" class="second"></td>
+			</tr>
+			<tr>
+				<td>数量：</td>
+				<td><input type="text" name="shipper" class="first"></td>
+				<td>重量：</td>
+				<td><input type=-"text" name="shipper" class="first"></td>
+				<td>发货时间：</td>
+				<td><input type="text" name="shipper"></td>
+			</tr>
+		</table>
+	</fieldset>
+<div id="sub">
+<input type="submit" value="确定">
+<input type="submit" value="取消">
+</div>
+</form>
+</div>
+</body>
+</html>
